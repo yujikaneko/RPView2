@@ -10,11 +10,12 @@ RPView2 is a VR simulator designed to provide an experience of visual field cons
 
 ### Hardware
 - **VR Headset**: [HTC Vive Pro Eye](https://www.vive.com/jp/product/vive-pro-eye/overview/)
+- **PC with NVidia GPU**: CUDA-supported NVIDIA graphics card for GPU acceleration.
 
 ### Software
 - **OS**: Windows 11 Home (23H2, 22631.4112)
 - **Development Environment**: Visual Studio 2022 Version 17.11.2
-- **Programming Language**: C++
+- **Programming Language**: C++, CUDA
 
 ### Libraries and SDKs
 The following libraries and SDKs are required:
@@ -23,6 +24,7 @@ The following libraries and SDKs are required:
 - **GLFW**: 2.2.0#3, For window management with OpenGL
 - **GLEW**: 3.4, For managing OpenGL extensions
 - **Vive SRanipal SDK**: 1.3.3.0, For utilizing the eye-tracking features of the HTC Vive Pro Eye
+- **CUDA Toolkit**: Version 12.6, For GPU-accelerated image processing
 
 ## Installation
 
@@ -40,6 +42,8 @@ The following libraries and SDKs are required:
    - [GLEW](http://glew.sourceforge.net/)
    - [Vive SRanipal SDK](https://developer.vive.com/resources/knowledgebase/vive-sranipal-sdk/)
      - environment variable `SRanipal` to the SRanipal folder
+   - [CUDA Toolkit]()
+     - Install the CUDA Toolkit, and set the environment variable `CUDA_PATH`.
 
 3. Open the `RPView2.sln` project file in Visual Studio.
 
